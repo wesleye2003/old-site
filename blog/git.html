@@ -6,16 +6,31 @@
     <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
   </head>
   <body>
-    <h1>Git Basics</h1>
-    <h2>The benefits of version control and remote repositories</h2>
-    <h3>1/24/2016</h4>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">Contact Me</a>
+      <a href="#">Index</a>
+    </nav>
 
-    <section>
+    <header>
+      <h1>Git Basics</h1>
+    </header>
+
+    <article>
+      <h2>The benefits of version control and remote repositories</h2>
+
+      <h2>1/24/2016</h2>
+
       <p>Version control is a great way of managing programming projects. It allows one copy of a file to be distributed to and edited by many people at once by hosting the file on a remote server known as a remote repository. The main feature of version control the way it streamlines the process of making and tracking changes.</p>
 
       <p>When using git for version control, you can keep track of changes by using a few commands. The first two things you should always do when making changes to a file are cloning the remote repository to your computer, and creating a feature branch of that repository. These actions allow you to make changes to a copy of the file on your computer without affecting the original file. Once you begin making changes, you can use the command <b>git status</b> to check and see if any changes have been made to the current branch and compare it to the master or origin master branch.  When you want to save your changes to the branch you are working in, you can set the changes to be staged for commitment using <b>git add FILENAME</b> then make notations on the changes by using the <b>git commit -m</b> command. Those last two commands make a log of all of the changes you make, and that log can be checked by using the command <b>git log</b>. Furthermore, that log of changes becomes accessible to anyone who can view the branch in the remote repository (origin branch) once you push those changes to your local feature and master branches and merge them within the remote repository. In summary, git provides you with the commands you need to make changes to a file on your computer, notate and log the changes made, and apply those changes to the original file on the remote repository all while providing a public history of all of your changes.</p>
 
       <p>I know I've talked a lot about using a remote repository but I haven't really explained which one to use or why you should use it.  The remote repository that I use is GitHub, and I use it because it's easy to use and extremely efficient.  GitHub allows me to store my code in files on a remote server so that I can share that code with others just by using a few commands. And while that is a nice feature, I think the most important part of GitHub is the way it allows me to store the working code remotely and freely edit a copy of that code on my own computer.  This allows me to tinker with the file as much as I want, and if I make mistakes and completely screw up my code I can just pull down the original file to my computer and start over.</p>
-    </section>
+    </article>
   </body>
+
+  <footer>
+    <h3>Copyright</h3>
+  </footer>
 </html>
