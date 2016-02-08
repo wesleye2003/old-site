@@ -80,17 +80,20 @@ footer h3 {
 a:link {
   color: #3A3F7B;
   text-decoration: none;
+  text-shadow: 2px 2px 5px #9E1528;
 }
 
 a:visited {
   color: #182080;
   text-decoration: none;
+  text-shadow: 2px 2px 5px #9E1528;
 }
 
 a:hover{
   color: #3A3F7B;
   font-style: italic;
   text-decoration: none;
+  text-shadow: 2px 2px 5px #9E1528;
 }
 
 a:active{
@@ -98,4 +101,5 @@ a:active{
   font-style: italic;
   font-weight: bold;
   text-decoration: none;
+  text-shadow: 2px 2px 5px #9E1528;
 }
