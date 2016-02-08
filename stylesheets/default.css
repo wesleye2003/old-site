@@ -2,6 +2,8 @@ body {
   background-color: #9E1528;
   font-size: 20px;
   font-family: sans-serif;
+  color: #ffffff;
+  text-shadow: 2px 2px 7px #000000;
 }
 
 nav {
@@ -12,6 +14,7 @@ nav {
   display: inline-block;
   font-size: 20px;
   z-index: 2;
+  text-shadow: 2px 2px 5px #9E1528;
 }
 
 header {
