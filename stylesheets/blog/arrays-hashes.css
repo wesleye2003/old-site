@@ -1,0 +1,10 @@
+.italics {
+	font-style: italic;
+	color: #9E9E9E;
+}
+
+.code {
+	background-color: #9E9E9E;
+	font-family: courier, monospace
+	color: black;
+}

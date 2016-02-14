@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Arrays & Hashes</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/arrays-hashes.css">
+  </head>
+
+  <body>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="./me.html">About Me</a>
+      <a href="./contact.html">Contact Me</a>
+      <a href="./index.html">Index</a>
+    </nav>
+
+    <header>
+      <div id="social1">
+        <a href="https://www.linkedin.com/in/wesley-el-amin-b44652103">
+          <img src="../imgs/linked.png" width="30" height="30" />
+        </a>
+      </div>
+
+      <div id="social2">
+        <a href="https://www.facebook.com/wesley.elamin">
+          <img src="../imgs/facebook.png" width="30" height="30" />
+        </a>
+      </div>
+
+      <div id="social3">
+        <a href="https://github.com/wesleye2003">
+          <img src="../imgs/github.png" width="30" height="30" />
+        </a>
+      </div>
+
+      <h1>Ruby Basics</h1>
+
+      <div id="pic">
+        <img src="../imgs/tree.png" width="150" height="150" />
+      </div>
+    </header>
+
+    <article>
+      <h2>Containers</h2>
+
+      <h2>2/13/16</h2>
+
+      <p>In the programming language Ruby there are many "things"--technically referred to as <div class="italics">objects</div>--that make up a program, and today we will be talking about a couple of objects, called <div class="italics">arrays</div> and <div class="italics">hashes</div>, that can <div class="italics">contain</div>, well, other objects. Because arrays and hashes can contain other objects they belong to a <div class="italics">class</div>, or group classification, of objects called <div class="italics">containers</div>. Let's take a look at how these containers hold other objects, and how Ruby allows us to utilize containers to arrange, organize, and modify their contents.</p>
+
+      <h2>Arrays</h2>
+
+      <p>Arrays are the first type of container we'll talk about. Arrays are lists of objects that are separated by commas, contained in brackets, and sorted in and <div class="italics">indexed numerical order</div>(I'll elaborate on that more later). An example array would look like this: 
+        <blockquote class="code">
+          <code>
+            example_array = ["red", "blue", "green", and "yellow"]
+          </code>
+        </blockquote>
+      In that little block of code, the array's name is <div class="italics">example_array</div> and there are 4 string objects in the array: <div class="italics">"red", "blue", "green", and "yellow"</div>. These objects are sorted in numerical order starting at 0, and their place in the array is known as their <div class="italics">index</div>. Since 0 is the starting point for indexes, the first object in the array is <div class="italics">"red"</div> and its index is 0; therefore <div class="italics">"red"</div> has the <div class="italics">0th index</div> in the array. Thanks to this indexing system, we can refer to an individual object in an array by typing this in Ruby (with <div class="italics">n</div> being the index number you want to refer to):
+        <blockquote class="code">
+          <code>
+            array_name[n]
+          </code>
+        </blockquote>
+      This makes it easy to store data in an array and access an individual object within that array whenever you need it!</p>
+
+      <p>It's also important to mention that you can perform <div class="italics">methods</div>--defined sequences of actions in Ruby--on all of the items in an array by typing the name of the array, followed by the method you would like to apply to it. Here's an basic example:
+        <blockquote class="code">
+          <code>
+            array_name.methodname
+          </code>
+        </blockquote>
+      In the above instance, the array <div class="italics">array_name</div> is being modified by the (fake) method, <div class="italics">methodname</div>. That is how you apply a method to every object in an array; whatever method goes after the period following the array name will perform its designated actions to each item in the array and return whatever it is meant to return. Using methods on entire arrays is a great way to mass-edit or organize lists of data and save yourself a lot of work!</p>
+
+      <h2>Hashes</h2>
+
+      <p>Hashes are the other container type we'll look at. Hashes are also lists of objects, but they are stored and sorted in pairs of <div class="italics">keys</div> and <div class="italics">values</div>, separated by commas, contained in curly braces, and each pair is sorted as a whole based on the order it was added into the array. While that may sound like quite a bit to take in at first, it's actually very similar to how we would look at an array. Here's an example of a hash:
+        <blockquote class="code">
+          <code>
+            color_hash = { "best" => "green"
+            "second best" => "red"
+            "third best" => "yellow" }
+          </code>
+        </blockquote>
+      In the above example, the hash is named <div class="italics">color_hash</div>, the keys are <div class="italics">"best", "second best", and "third best"</div>, the values are <div class="italics">"green", "red", and "yellow"</div>, and the key-value pairs are <div class="italics">"best" | "green", "second best" | "red", and "third best" | "yellow"</div>. Let's break that down. The keys in a hash are like the index for an array; you can use each key to refer to its corresponding value in a hash. For example, just as <div class="italics">example_array[0]</div> returns an output of <div class="italics">"red"</div> from the array <div class="italics">example_array</div>, you can type <div class="italics">color_hash["best"]</div> and that will return <div class="italics">"green"</div> from the <div class="italics">color_hash</div> hash. When you look at them side by side like that, array indexes and hash keys are pretty identical! The only major difference is that array indexes can only be positive integers, whereas hash keys can be any type of Ruby object at all. Another important thing to note about keys and values is that there can only be one value for a key; basically all that means is that each key can only be used once in any given key-value pair in a hash. Think about it: if keys in a hash are like the indexes in an array, each key can only reference one value-just like how each index can only reference one object.</p>
+
+      <p>Just like arrays, hashes can also be modified using methods. You can actually use the exact same syntax! Here's an example of how you'd apply a method to a hash:
+        <blockquote class="code">
+          <code>
+            hash_name.methodname
+          </code>
+        </blockquote>
+      Look familiar? That example demonstrates that hash methods are applied in the same way as array methods; list the name of the hash, followed by a period, then finally followed by the name of the method you'd like to apply.</p>
+
+      <h2>Summary</h2>
+
+      <p>In conclusion, both hashes and arrays are useful containers for Ruby; what youre probably thinking now is, "Why use one over the other?" I've found that arrays tend to be more useful the objects in the array will be changing often. For example, I'd prefer to use an array if I wanted to make a program that calculated the average of a list of numbers I put into it. Hashes are more useful when you know exactly what keys and values you're going to put into the list and you just want to be able to reference them easily. For instance, if I wanted to write a program that determined the measurement, in inches, of whatever size I enter in(from small to extra extra large), I'd make a hash that uses the entered size as the keys and the inch measurments as the corresponding values. I hope my take on arrays and hashes helped you out, but if it was a bit confusing to you or you know anything I could add to increase the clarity of this post, feel free to contact me via email. Cheers!</p>
+    </article>
+
+  </body>
+
+  <footer>
+    <h3>Copyright Wesley El-Amin 2016</h3>
+  </footer>
+
+</html>
