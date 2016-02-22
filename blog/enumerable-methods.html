@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enumerable Methods</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog/enumerables.css">
+</head>
+
+<body>
+	<nav>
+		<a href="../index.html">Home</a>
+		<a href="./me.html">About Me</a>
+		<a href="./contact.html">Contact Me</a>
+		<a href="./index.html">Index</a>
+	</nav>
+
+	<header>
+		<div id="social1">
+			<a href="https://www.linkedin.com/in/wesley-el-amin-b44652103">
+				<img src="../imgs/linked.png" width="30" height="30" />
+			</a>
+		</div>
+
+		<div id="social2">
+			<a href="https://www.facebook.com/wesley.elamin">
+				<img src="../imgs/facebook.png" width="30" height="30" />
+			</a>
+		</div>
+
+		<div id="social3">
+			<a href="https://github.com/wesleye2003">
+				<img src="../imgs/github.png" width="30" height="30" />
+			</a>
+		</div>
+
+		<h1>Enumerable Methods</h1>
+
+		<div id="pic">
+			<img src="../imgs/tree.png" width="150" height="150" />
+		</div>
+	</header>
+
+	<article>
+		<h2>The count Method</h2>
+
+		<h2>2/21/16</h2>
+
+		<p>Enumerables are a type of classification for many objects in Ruby, and by calling and Enumerable method you can modify data in one of the qualifying sub-classes of Enumerable. I'll be talking about an Enumerable method called <div class="italics">#count</div>. When called, the <div class="italics">#count</div> method takes an Enumerable as its input and returns the number of items in that Enumerable if no value or block of code is supplied. If a value is also specified, <div class="italics">#count</div> will return the number of items equal to that value; the same concept applies to a block of code. The method will return the number of items equal to the return value of whatever code is supplied. Here's an example(the code is on the left, the returned value is to the right of the #=>): 
+			<blockquote class="code">
+				<code>
+					<p>
+						array = [1, 2, 2, 4, 4, 6, 7]
+					</p>
+
+					<p>
+						array.count #=> 7
+					</p>
+
+					<p>
+						array.count(4) #=> 2
+					</p>
+
+					<p>
+						array.count{ |n| n%2==0 } #=> 5
+					</p>
+
+				</code>
+			</blockquote>
+		The last example may be a bit hard to read but the code is simple. <div class="italics">#count</div> iterates through the array and adds 1 to the total returned value everytime the remainder of the term in the array divided by 2 is equal to zero. Basically, that block of code checks for numbers that are divisible by 2. 
+		</p>
+	</article>
+
+
+</body>
+
+<footer>
+	<h3>Copyright Wesley El-Amin 2016</h3>
+</footer>
+</html>

@@ -1,0 +1,19 @@
+body p {
+	display: inline;
+}
+.italics {
+	display: inline;
+	font-style: italic;
+	color: #000000;
+}
+
+.code {
+	background-color: #9E9E9E;
+	font-family: courier, monospace
+	color: black;
+	display: block;
+	text-align: center;
+}
+.code p {
+	display: block;
+}
