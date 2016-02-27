@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/classes.css">
   </head>
   <body>
     <nav>
@@ -45,9 +46,152 @@
 
       <h2>2/26/2016</h2>
 
-      <p><!-- Blog post here --></p>
-    </article>
+      <p>Today I'll be talking a bit about ruby classes and class objects. If you read my post on Arrays and Hashes, you know that classes are basically specifications for a whole group of Ruby objects. Today, I'll be using video games as an example of classes.</p>
 
+      <p>Let's start by defining a video game. Video games have a rating, a genre, a title, and a number of players. So if we wanted to set up a video game class in Ruby, it would need all of those different characteristics. To make that happen, we can set up <div class="italics">instance variables</div> using the "@" sign. Instance variables are like the different aspects of a class-they are part of every object in that class, but they can change between each new instance within that class. Here's an example of me setting up the <div class="italics">VideoGames</div> class and setting up instance variables for video games:
+      <blockquote class="code">
+        <code>
+          <p>
+            class VideoGames
+          </p>
+
+          <p>
+            def initialize(title, genre, rating, players)
+          </p>
+
+          <p>
+            @title = title
+          </p>
+
+          <p>
+            @genre = genre
+          </p>
+
+          <p>
+            @rating = rating
+          </p>
+
+          <p>
+            @players = players
+          </p>
+
+          <p>
+            end
+          </p>
+
+          <p>
+            end
+          </p>
+
+        </code>
+      </blockquote>
+      In that example, I made VideoGames a class. I also defined a special method called <div class="italics">initialize</div>. That way when a new game is made, I can store its title, genre, rating, and number of players in instance variables as soon as I tell ruby that the game is part of the VideoGame class. Here's an example:
+      <blockquote class="code">
+        <code>
+          <p>
+            new_game("Little Big Planet", "Platformer", "E", "1-4") = VideoGame.new
+          </p>
+        </code>
+      </blockquote>
+      That's all! I have set up a VideoGame called new_game that has a title called "Little Big Planet," it belongs to the "platformer" genre, its rating is "E", and it can be played with 1 to 4 players.</p>
+
+      <p>Now that our new VideoGame class is storing information, we have to find a way to do something with all of that info. This is where <div class="italics">instance methods</div> come in. Instance methods are actions that can be performed on a specific class, so if we want to write a program that takes the name, genre, rating, and number of players for a game we'd have to write it into the definition for that class. This is how we'd do that:
+      <blockquote class="code">
+        <code>
+          <p>
+            class VideoGames
+          </p>
+
+          <p>
+            def initialize(title, genre, rating, players)
+          </p>
+
+          <p>
+            @title = title
+          </p>
+
+          <p>
+            @genre = genre
+          </p>
+
+          <p>
+            @rating = rating
+          </p>
+
+          <p>
+            @players = players
+          </p>
+
+          <p>
+            end
+          </p>
+
+          <p>
+            def game_description
+          </p>
+
+          <p>
+            puts "Title: #{@title}" 
+          </p>
+
+          <p>
+            puts "Genre: #{@genre}"
+          </p>
+
+          <p>
+            puts "Rating: #{@rating}"
+          </p>
+
+          <p>
+            puts "Players: #{@players}"
+          </p>
+
+          <p>
+            end
+          </p>
+
+          <p>
+            end
+          </p>
+
+        </code>
+      </blockquote>
+      That's our original example, but with an instance method called <div class="italics">game_description</div> written in. Now, when we define our new_game as an object in the VideoGame class, we can also print out the game's description as well. Here's how:
+      <blockquote class="code">
+        <code>
+          <p>
+            new_game("Little Big Planet", "Platformer", "E", "1-4") = VideoGame.new
+          </p>
+
+          <p>
+            new_game.game_description
+          </p>
+        </code>
+      </blockquote>
+      This is what will print out when we run that code:
+      <blockquote class="code">
+        <code>
+          <p>
+            Title: Little Big Planet
+          </p>
+
+          <p>
+            Genre: Platformer
+          </p>
+
+          <p>
+            Rating: E
+          </p>
+
+          <p>
+            Players: 1-4
+          </p>
+        </code>
+      </blockquote>
+      When we called the instance method <div class="italics">game_description</div> on our <div class="italics">new_game</div>, it took the title, genre, rating, and title that we supplied it with and printed each bit of info out on individual lines. </p>
+
+      <p>Classes are tremendously useful when you have an entire category of objects that have the same kinds of characteristics. You can practically set up classes for anything-cars, computers, books, movies, you name it! By using classes, you can quickly and easily collect info about an object within that class and perform actions using that provided data.</p>
+    </article>
   </body>
 
   <footer>
