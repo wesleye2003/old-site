@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/classes.css">
   </head>
   <body>
     <nav>
@@ -41,11 +42,32 @@
     </header>
 
     <article>
-      <h2>JavaScript</h2>
+      <h2>JavaScript Loops vs. Ruby Loops </h2>
 
       <h2>2/5/16</h2>
 
-      <p><!-- Blog post here --></p>
+      <p>Both Javascript and Ruby have certain ways of dealing with large amounts of data without using large amounts of code: these ways are called <div class="italics">loops.</div> Loops have the power to perform a block of code on a set of data repeatedly until the program is told to stop; I would argue, however, that JavaScript loops do this much better than Ruby loops.</p>
+
+      <p>When working in JavaScript, loops can be performed of almost any set of data without much prior setup. My favorite example is the <div class="italics">for loop:</div> a loop where you take a counter and modify it every time the loop is performed. When using a for loop, you define a variable as a counter to keep track of how many times the loop is performed and choose how to modify that counter before you even have to write the action the loop will perform! This makes it easy to keep your counter variable separate from whatever you modify inside of the loop. Here's an example to 'for loop' syntax:
+      <blockquote class="code">
+        <code>
+          <p>for (var counter = 5; counter > 0; counter--) {</p>
+          <p>blockOfCode</p>
+          <p>};</p>
+        </code>
+      </blockquote>
+      In that example, the first part in parenthesis defines the counter variable as the number 5. The second part is the condition that keeps the loop running; once the counter drops to zero or lower, the loop will stop. Finally the last part modifies the counter variable each time the loop of <div class="italics">blockOfCode</div> is performed; '--' means 'subtract one each time this loop is performed.' Put it all together and we have a loop that will run <div class="italics">blockOfCode</div> 5 times before the loop stops.</p>
+
+      <p>In contrast to the JavaScript loop, we have Ruby. To give us a good idea of the differences between looping in Ruby versus JS, I'll talk about a Ruby 'for loop.' In Ruby, you have several parts that make up this type of loop. I'll give an example then break it down into parts:
+      <blockquote class="code">
+        <code>
+          <p>for x in 0..2</p>
+          <p>blockOfCode</p>
+          <p>end</p>
+        </code>
+      </blockquote>
+      In that example, x is the variable we use as a counter, but we have a few extra steps to do before we can write out our <div class="italics">blockOfCode</div>; we have to set a counter. <div class="italics">In</div> is used to set a range of numbers that basically defines how many times the loop is performed. The '0..2' part is the number range; it is a list of numbers that includes 0, 1, and 2. Finally, we write our <div class="italics">blockOfCode</div>, but we also have to use the variable x somewhere inside of that code for the loop to be effective. Kind of confusing, right?
+      </p>
     </article>
   </body>
 
