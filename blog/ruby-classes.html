@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/classes.css">
   </head>
   <body>
     <nav>
@@ -34,7 +33,7 @@
         </a>
       </div>
 
-      <h1>Ruby Basics</h1>
+      <h1>Ruby Basics: Classes</h1>
 
       <div id="pic">
         <img src="../imgs/tree.png" width="150" height="150" />
@@ -46,7 +45,7 @@
 
       <h2>2/26/2016</h2>
 
-      <p>Today I'll be talking a bit about ruby classes and class objects. If you read my post on Arrays and Hashes, you know that classes are basically specifications for a whole group of Ruby objects. Today, I'll be using video games as an example of classes.</p>
+      <p>Today I'll be talking a bit about ruby classes and class objects. If you read my post on <a href="./arrays-hashes.html">Arrays and Hashes</a>, you know that classes are basically specifications for a whole group of Ruby objects. Today, I'll be using video games as an example of classes.</p>
 
       <p>Let's start by defining a video game. Video games have a rating, a genre, a title, and a number of players. So if we wanted to set up a video game class in Ruby, it would need all of those different characteristics. To make that happen, we can set up <div class="italics">instance variables</div> using the "@" sign. Instance variables are like the different aspects of a class-they are part of every object in that class, but they can change between each new instance within that class. Here's an example of me setting up the <div class="italics">VideoGames</div> class and setting up instance variables for video games:
       <blockquote class="code">
@@ -55,27 +54,27 @@
             class VideoGames
           </p>
 
-          <p>
+          <p class="indent">
             def initialize(title, genre, rating, players)
           </p>
 
-          <p>
+          <p class="dubIndent">
             @title = title
           </p>
 
-          <p>
+          <p class="dubIndent">
             @genre = genre
           </p>
 
-          <p>
+          <p class="dubIndent">
             @rating = rating
           </p>
 
-          <p>
+          <p class="dubIndent">
             @players = players
           </p>
 
-          <p>
+          <p class="indent">
             end
           </p>
 
@@ -102,51 +101,53 @@
             class VideoGames
           </p>
 
-          <p>
+          <p class="indent">
             def initialize(title, genre, rating, players)
           </p>
 
-          <p>
+          <p class="dubIndent">
             @title = title
           </p>
 
-          <p>
+          <p class="dubIndent">
             @genre = genre
           </p>
 
-          <p>
+          <p class="dubIndent">
             @rating = rating
           </p>
 
-          <p>
+          <p class="dubIndent">
             @players = players
           </p>
 
-          <p>
+          <p class="indent">
             end
           </p>
 
-          <p>
+          <div class="space"></div>
+
+          <p class="indent">
             def game_description
           </p>
 
-          <p>
+          <p class="dubIndent">
             puts "Title: #{@title}" 
           </p>
 
-          <p>
+          <p class="dubIndent">
             puts "Genre: #{@genre}"
           </p>
 
-          <p>
+          <p class="dubIndent">
             puts "Rating: #{@rating}"
           </p>
 
-          <p>
+          <p class="dubIndent">
             puts "Players: #{@players}"
           </p>
 
-          <p>
+          <p class="indent">
             end
           </p>
 

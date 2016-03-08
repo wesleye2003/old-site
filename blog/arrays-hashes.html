@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/arrays-hashes.css">
+    
   </head>
 
   <body>
@@ -65,6 +65,8 @@
         </blockquote>
       This makes it easy to store data in an array and access an individual object within that array whenever you need it!</p>
 
+      <div class="space"></div>
+
       <p>It's also important to mention that you can perform <div class="italics">methods</div>--defined sequences of actions in Ruby--on all of the items in an array by typing the name of the array, followed by the method you would like to apply to it. Here's an basic example:
         <blockquote class="code">
           <code>
@@ -83,7 +85,9 @@
             "third best" => "yellow" }
           </code>
         </blockquote>
-      In the above example, the hash is named <div class="italics">color_hash</div>, the keys are <div class="italics">"best", "second best", and "third best"</div>, the values are <div class="italics">"green", "red", and "yellow"</div>, and the key-value pairs are <div class="italics">"best" | "green", "second best" | "red", and "third best" | "yellow"</div>. Let's break that down. The keys in a hash are like the index for an array; you can use each key to refer to its corresponding value in a hash. For example, just as <div class="italics">example_array[0]</div> returns an output of <div class="italics">"red"</div> from the array <div class="italics">example_array</div>, you can type <div class="italics">color_hash["best"]</div> and that will return <div class="italics">"green"</div> from the <div class="italics">color_hash</div> hash. When you look at them side by side like that, array indexes and hash keys are pretty identical! The only major difference is that array indexes can only be positive integers, whereas hash keys can be any type of Ruby object at all. Another important thing to note about keys and values is that there can only be one value for a key; basically all that means is that each key can only be used once in any given key-value pair in a hash. Think about it: if keys in a hash are like the indexes in an array, each key can only reference one value-just like how each index can only reference one object.</p>
+      In the above example, the hash is named <div class="italics">color_hash</div>, the keys are <div class="italics">"best", "second best",</div> and <div class="italics">"third best"</div>, the values are <div class="italics">"green", "red",</div> and <div class="italics">"yellow"</div>, and the key-value pairs are <div class="italics">"best" | "green", "second best" | "red",</div> and <div class="italics">"third best" | "yellow"</div>. Let's break that down. The keys in a hash are like the index for an array; you can use each key to refer to its corresponding value in a hash. For example, just as <div class="italics">example_array[0]</div> returns an output of <div class="italics">"red"</div> from the array <div class="italics">example_array</div>, you can type <div class="italics">color_hash["best"]</div> and that will return <div class="italics">"green"</div> from the <div class="italics">color_hash</div> hash. When you look at them side by side like that, array indexes and hash keys are pretty identical! The only major difference is that array indexes can only be positive integers, whereas hash keys can be any type of Ruby object at all. Another important thing to note about keys and values is that there can only be one value for a key; basically all that means is that each key can only be used once in any given key-value pair in a hash. Think about it: if keys in a hash are like the indexes in an array, each key can only reference one value-just like how each index can only reference one object.</p>
+
+      <div class="space"></div>
 
       <p>Just like arrays, hashes can also be modified using methods. You can actually use the exact same syntax! Here's an example of how you'd apply a method to a hash:
         <blockquote class="code">
@@ -95,7 +99,7 @@
 
       <h2>Summary</h2>
 
-      <p>In conclusion, both hashes and arrays are useful containers for Ruby; what youre probably thinking now is, "Why use one over the other?" I've found that arrays tend to be more useful the objects in the array will be changing often. For example, I'd prefer to use an array if I wanted to make a program that calculated the average of a list of numbers I put into it. Hashes are more useful when you know exactly what keys and values you're going to put into the list and you just want to be able to reference them easily. For instance, if I wanted to write a program that determined the measurement, in inches, of whatever size I enter in(from small to extra extra large), I'd make a hash that uses the entered size as the keys and the inch measurments as the corresponding values. I hope my take on arrays and hashes helped you out, but if it was a bit confusing to you or you know anything I could add to increase the clarity of this post, feel free to contact me via email. Cheers!</p>
+      <p>In conclusion, both hashes and arrays are useful containers for Ruby; what youre probably thinking now is, "Why use one over the other?" I've found that arrays tend to be more useful the objects in the array will be changing often. For example, I'd prefer to use an array if I wanted to make a program that calculated the average of a list of numbers I put into it. Hashes are more useful when you know exactly what keys and values you're going to put into the list and you just want to be able to reference them easily. For instance, if I wanted to write a program that determined the measurement, in inches, of whatever size I enter in(from small to extra extra large), I'd make a hash that uses the entered size as the keys and the inch measurments as the corresponding values. I hope my take on arrays and hashes helped you out!</p>
     </article>
 
   </body>
