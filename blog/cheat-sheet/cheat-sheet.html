@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Post</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../../stylesheets/blog/blog.css">
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="./me.html">About Me</a>
+      <a href="./contact.html">Contact Me</a>
+      <a href="./index.html">Index</a>
+    </nav>
+
+    <header>
+      <div id="social1">
+        <a href="https://www.linkedin.com/in/wesley-el-amin-b44652103">
+          <img src="../../imgs/linked.png" width="30" height="30" />
+        </a>
+      </div>
+
+      <div id="social2">
+        <a href="https://www.facebook.com/wesley.elamin">
+          <img src="../../imgs/facebook.png" width="30" height="30" />
+        </a>
+      </div>
+
+      <div id="social3">
+        <a href="https://github.com/wesleye2003">
+          <img src="../../imgs/github.png" width="30" height="30" />
+        </a>
+      </div>
+
+      <h1>Cheat Sheet</h1>
+
+      <div id="pic">
+        <img src="../../imgs/tree.png" width="150" height="150" />
+      </div>
+    </header>
+
+    <article>
+      <h2>CSS</h2>
+
+      <ul>
+      	<li>
+      		<p>Opacity: makes an element transparent using an <div class="italics">alpha</div> value. It's a number between 0 and 1.0 (for example, 0.5 is 50% transparency).</p>
+      		<blockquote class="code">
+      			<p>element {</p>
+
+      			<p class="indent">background-color: #000000;</p>
+
+      			<p class="indent">opacity: 0.5;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Font Weight: allows you to make text either normal or bold.</p>
+      		<blockquote class="code">
+      			<p>element {</p>
+
+      			<p>font-weight: bold;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Text transform: changes text to all upper case, lower case, or capitalizes the first letter of every word.</p>
+      		<blockquote class="code">
+      			<p>element1 {</p>
+
+      			<p class="indent">text-transform: uppercase;</p>
+
+      			<p>}</p>
+
+      			<div class="space"></div>
+
+      			<p>element2 {</p>
+
+      			<p class="indent">text-transform: lowercase;</p>
+
+      			<p>}</p>
+
+      			<div class="space"></div>
+
+      			<p>element3 {</p>
+
+      			<p class="indent">text-transform: capitalize;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Text decoration: allows you to remove all lines from text, add an underline, add a line above text, put a line through text, or make text blink. DO NOT use blinking text, it's really annoying and it's bad practice to use it. Seriously. I'm not even going to put it in the example.</p>
+      		<blockquote class="code">
+      			<p>element1 {</p>
+
+      			<p class="indent">text-decoration: none;</p>
+
+      			<p>}</p>
+
+      			<div class="space"></div>
+
+      			<p>element2 {</p>
+
+      			<p class="indent">text-decoration: underline;</p>
+
+      			<p>}</p>
+
+      			<div class="space"></div>
+
+      			<p>element3 {</p>
+
+      			<p class="indent">text-decoration: overline;</p>
+
+      			<p>}</p>
+
+      			<div class="space"></div>
+
+      			<p>element4 {</p>
+
+      			<p class="indent">text-decoration: line-through;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Text indent: indents text using a pixel or em specification.</p>
+      		<blockquote class="code">
+      			<p>element {</p>
+
+      			<p class="indent">text-indent: 20px;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Text shadow: drops a shadow behind text using 4 specification fields: left to right shadow, top to bottom shadow, shadow blur, and shadow color. The first three are measured in pixels or ems, and the fourth is a hex or rgb color.</p>
+      		<blockquote class="code">
+      			<p>element {</p>
+
+      			<p class="indent">text-shadow: 1em 2em 1em #000000;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Box shadow: drops a shadow behind a box using 5 specification fields: horizontal(left to right) offset, vertical(top to bottom) offset, blur distance(blurs the edges of the shadow), shadow spread(positive expand the shadow, negative values shrink it), and shadow color. The first 4 fields are measured in pixels and ems, the last field is a hex or rgb color value. One important thing to note-the first four fields can also be preceeded by the word "inset," which will drop the shadow inside of the box instead of outside.</p>
+      		<blockquote class="code">
+      			<p>element {</p>
+
+      			<p class="indent">text-shadow: 3em 3em 1em 1em #ffffff;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Border radius: rounds the corners of a box. You can just use <div class="italics">border-radius</div> with one pixel or em value to round all four corners with the same style at once. You can also use four pixel or em values to round the top right, bottom right, bottom left and top left corners with different values. Lastly, you can use <div class="italics">border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius, </div> and <div class="italics">border-top-left-radius</div> to style each respective corner.</p>
+      		<blockquote class="code">
+      			<p>element1 {</p>
+
+      			<p class="indent">border-radius: 1em 1em 1em 1em;</p>
+
+      			<p>}</p>
+
+      			<div class="space"></div>
+
+      			<p>element2 {</p>
+
+      			<p class="indent">border-top-right-radius: 1em;</p>
+
+      			<p class="indent">border-bottom-right-radius: 1em;</p>
+
+      			<p class="indent">border-bottom-left-radius: 1em;</p>
+
+      			<p class="indent">border-top-left-radius: 1em;</p>
+
+      			<p>}</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Operation name: description of what it does</p>
+      		<blockquote class="code">
+      			<p>code</p>
+
+      			<p>code</p>
+
+      			<p>code</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Operation name: description of what it does</p>
+      		<blockquote class="code">
+      			<p>code</p>
+
+      			<p>code</p>
+
+      			<p>code</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Operation name: description of what it does</p>
+      		<blockquote class="code">
+      			<p>code</p>
+
+      			<p>code</p>
+
+      			<p>code</p>
+      		</blockquote>
+      	</li>
+
+      	<li>
+      		<p>Operation name: description of what it does</p>
+      		<blockquote class="code">
+      			<p>code</p>
+
+      			<p>code</p>
+
+      			<p>code</p>
+      		</blockquote>
+      	</li>
+
+      	
+
+      </ul>
+      
+
+    </article>
+
+    <section>
+      <h2>Related Links</h2>
+
+      <ul>
+        <li><a href="http://ruby-doc.com/">Ruby Docs</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript</a></li>
+      </ul>
+    </section>
+  </body>
+
+  <footer>
+    <h3>Copyright Wesley El-Amin 2016</h3>
+  </footer>
+</html>
