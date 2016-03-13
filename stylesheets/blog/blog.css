@@ -1,7 +1,7 @@
 article {
   background-color: #7B7475;
   display: inline-block;
-  border: .5em solid black;
+  border: .1em solid black;
   border-radius: 10px;
   width: 80%;
   margin: 7.5%;
@@ -10,12 +10,13 @@ article {
 
 article p {
   display: inline;
+  text-align: justify;
 }
 
 section {
   background-color: #7B7475;
   display: block;
-  border: .5em solid black;
+  border: .1em solid black;
   border-radius: 10px;
   width: 80%;
   margin: 7.5%;
@@ -29,6 +30,7 @@ section {
 }
 
 .code {
+  border-radius: 5px;
   background-color: #9E9E9E;
   font-family: courier, monospace;
   color: #ffffff;
