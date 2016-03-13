@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog Post</title>
+    <title>Test-Driven Development</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
     <link rel="stylesheet" type="text/css" href="../stylesheets/blog/blog.css">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/blog/classes.css">
   </head>
   <body>
     <nav>
@@ -34,7 +33,7 @@
         </a>
       </div>
 
-      <h1>Blog Post</h1>
+      <h1>Test-Driven Development</h1>
 
       <div id="pic">
         <img src="../imgs/tree.png" width="150" height="150" />
@@ -42,20 +41,17 @@
     </header>
 
     <article>
-      <h2>Topic</h2>
+      <h2>What is it? Why use it? <h2>
 
-      <h2>Date</h2>
+      <h2>3/13/16</h2>
 
-      <p><!-- Blog post here --></p>
+      <p><div class="italics">Test-driven development (TDD)</div> is a program development process that uses tests that will fail upon running the program being tested unless the conditions of the tests are met. These tests are generally conditionals, meaning that when a programmer writes a test it will return as false when the conditions are not met, and true when they are. These tests generally raise or throw errors to the console that detail what conditions have not been met so that the programmers know what to fix. The normal process of TDD is pretty simple and not too far from the pseudocode-code-refactor process we use in DBC when writing a program. In TDD, a programmer starts by writing a test that will always fail until a specific condition to be met. The programmer will then write their code. Once the code passes the test, the programmer refactors their code and checks to make sure it still passes the test. Once that process is done, the programmer will start the process over again with a new test. This process continues until all of the conditions have been covered in the tests. </p>
+
+      <div class="space"></div>
+
+      <p>So now that we understand TDD a little better, let's talk about why developers use it. TDD is like studying with a study guide; it gives you a sense of direction when you work. If you use a series of tests that outline exactly what conditions your program must meet, you can write code by aiming to meet each individual condition step by step; before you know it, you will have a fully functional program(given that the tests are written properly). Without tests, writing very complex programs can be a huge chore. If you set out to write a program that has to perform a very complex list of operations and your only way to test the program is by entering in every possible situation where the program will and will not work using driver code, you're going to have a bad time. It's especially neccessary to use testing when writing in languages like JavaScript, where it is often hard to tell if a program has errors or bugs. </p>
     </article>
 
-    <section>
-      <h2>Related Links</h2>
-
-      <ul>
-        <li><a href="#"><!-- First Link --></a></li>
-      </ul>
-    </section>
   </body>
 
   <footer>
