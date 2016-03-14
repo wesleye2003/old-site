@@ -1,7 +1,7 @@
 article {
   background-color: #7B7475;
   display: inline-block;
-  border: .1em solid black;
+  box-shadow: inset 0 0 1em #9E1528;
   border-radius: 10px;
   width: 80%;
   margin: 7.5%;
@@ -16,7 +16,7 @@ article p {
 section {
   background-color: #7B7475;
   display: block;
-  border: .1em solid black;
+  box-shadow: inset 0 0 1em #9E1528;
   border-radius: 10px;
   width: 80%;
   margin: 7.5%;
